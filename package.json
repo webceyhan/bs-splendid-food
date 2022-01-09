@@ -9,6 +9,7 @@
         "sass": "sass -w --style=compressed src/styles/style.scss src/styles/style.min.css"
     },
     "devDependencies": {
+        "bootstrap": "^5.1.3",
         "browser-sync": "^2.27.7",
         "concurrently": "^7.0.0",
         "sass": "^1.47.0"

@@ -1,27 +1,14 @@
-/* ITCSS: Settings */
-// @import '_root';
-@import '_var.sass';
+/* Settings */
+@import "_var.sass";
 
-/* ITCSS: Tools */
-// @import '_mixins.sass';
+/* Fonts */
+@import "_modak.scss";
+@import "_icofont.scss";
 
-/* ITCSS: Fonts */
-@import '_modak.scss';
-@import '_icofont.scss';
+/* Base */
+@import "_global.sass";
+@import "_utility.sass";
 
-/* ITCSS: Base */
-@import '_global.sass';
-// @import '_utility.sass';
-
-/* ITCSS: Sections */
-// @import '_main.sass';
-// @import '_footer.sass';
-// @import '_cart.sass';
-
-/* ITCSS: Components */
-// @import '_card.sass';
-// @import '_topNav.sass';
-// @import '_splash.sass';
-
-/* ITCSS: Trumps */
-// @import '_mediaqueries.sass';
+// /* Components */
+@import "_navmenu.sass";
+@import "_splash.sass";

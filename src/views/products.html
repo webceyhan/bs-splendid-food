@@ -24,7 +24,6 @@
         <link rel="stylesheet" href="../styles/style.min.css" />
     </head>
     <body>
-
         <!-- navigation -->
         <nav class="navbar navbar-expand-md navbar-dark bg-success h5 m-0">
             <div class="container-fluid p-2-">
@@ -53,7 +52,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="products.html" class="nav-link active">Products</a>
+                            <a href="products.html" class="nav-link active"
+                                >Products</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a href="past-orders.html" class="nav-link">
@@ -78,219 +79,192 @@
             </div>
         </nav>
 
+        <!-- products -->
+        <main>
+            <div class="container py-5">
+                <h1 class="mb-3">Products</h1>
 
-        <div id="app">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <!-- card - Carrots -->
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <div class="card-image-top text-center pt-3">
+                                <i
+                                    class="icofont-10x icofont-carrot text-success"
+                                ></i>
+                            </div>
 
-            <main class="wrapper">
-                <h1>Products</h1>
+                            <div class="card-body p-5">
+                                <h4 class="card-title mb-4">Carrots</h4>
 
-                <div class="card-container">
-                    <div class="card">
-                        <div class="card-title">Carrots</div>
-                        <div class="card-body">
-                            <i class="icofont-10x icofont-carrot"></i>
-                            <form>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Type:</label>
+                                <dl class="row mb-4">
+                                    <hr />
+                                    <dt class="col-sm-6">Price:</dt>
+                                    <dd class="col-sm-6">$4.82</dd>
+                                    <hr />
+                                    <dt class="col-sm-6">Type:</dt>
+                                    <dd class="col-sm-6">Vegetable</dd>
+                                </dl>
+
+                                <div class="d-flex justify-content-between">
+                                    <div class="input-group me-4">
+                                        <input
+                                            type="number"
+                                            class="form-control form-control-sm"
+                                            value="1"
+                                        />
+                                        <span class="input-group-text">#</span>
                                     </div>
-                                    <div class="cell">
-                                        <em>Vegetable</em>
-                                    </div>
+
+                                    <button
+                                        class="btn btn-primary btn-sm d-flex align-items-center px-3"
+                                    >
+                                        Add
+                                        <i
+                                            class="icofont-cart-alt icofont-2x ms-2"
+                                        ></i>
+                                    </button>
                                 </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Price:</label>
-                                    </div>
-                                    <div class="cell">$4.82</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Quantity:</label>
-                                    </div>
-                                    <div class="cell">
-                                        <input type="number" value="0" />
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-light">Add to cart</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-title">Pineapples</div>
-                        <div class="card-body">
-                            <i class="icofont-10x icofont-pineapple"></i>
-                            <form>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Type:</label>
+                    <!-- card - Pineapples -->
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <div class="card-image-top text-center pt-3">
+                                <i
+                                    class="icofont-10x icofont-pineapple text-danger"
+                                ></i>
+                            </div>
+
+                            <div class="card-body p-5">
+                                <h4 class="card-title mb-4">Pineapples</h4>
+
+                                <dl class="row mb-4">
+                                    <hr />
+                                    <dt class="col-sm-6">Price:</dt>
+                                    <dd class="col-sm-6">$1.62</dd>
+                                    <hr />
+                                    <dt class="col-sm-6">Type:</dt>
+                                    <dd class="col-sm-6">Fruit</dd>
+                                </dl>
+
+                                <div class="d-flex justify-content-between">
+                                    <div class="input-group me-4">
+                                        <input
+                                            type="number"
+                                            class="form-control form-control-sm"
+                                            value="1"
+                                        />
+                                        <span class="input-group-text">#</span>
                                     </div>
-                                    <div class="cell">
-                                        <em>Fruit</em>
-                                    </div>
+
+                                    <button
+                                        class="btn btn-primary btn-sm d-flex align-items-center px-3"
+                                    >
+                                        Add
+                                        <i
+                                            class="icofont-cart-alt icofont-2x ms-2"
+                                        ></i>
+                                    </button>
                                 </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Price:</label>
-                                    </div>
-                                    <div class="cell">$1.62</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Quantity:</label>
-                                    </div>
-                                    <div class="cell">
-                                        <input type="number" value="0" />
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-light">Add to cart</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-title">Cherries</div>
-                        <div class="card-body">
-                            <i class="icofont-10x icofont-cherry"></i>
-                            <form>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Type:</label>
+                    <!-- card - Sausages -->
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <div class="card-image-top text-center pt-3">
+                                <i
+                                    class="icofont-10x icofont-sausage text-warning"
+                                ></i>
+                            </div>
+
+                            <div class="card-body p-5">
+                                <h4 class="card-title mb-4">Sausages</h4>
+
+                                <dl class="row mb-4">
+                                    <hr />
+                                    <dt class="col-sm-6">Price:</dt>
+                                    <dd class="col-sm-6">$3.69</dd>
+                                    <hr />
+                                    <dt class="col-sm-6">Type:</dt>
+                                    <dd class="col-sm-6">Meat</dd>
+                                </dl>
+
+                                <div class="d-flex justify-content-between">
+                                    <div class="input-group me-4">
+                                        <input
+                                            type="number"
+                                            class="form-control form-control-sm"
+                                            value="1"
+                                        />
+                                        <span class="input-group-text">#</span>
                                     </div>
-                                    <div class="cell">
-                                        <em>Fruit</em>
-                                    </div>
+
+                                    <button
+                                        class="btn btn-primary btn-sm d-flex align-items-center px-3"
+                                    >
+                                        Add
+                                        <i
+                                            class="icofont-cart-alt icofont-2x ms-2"
+                                        ></i>
+                                    </button>
                                 </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Price:</label>
-                                    </div>
-                                    <div class="cell">$1.04</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Quantity:</label>
-                                    </div>
-                                    <div class="cell">
-                                        <input type="number" value="0" />
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-light">Add to cart</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-title">Carrots</div>
-                        <div class="card-body">
-                            <i class="icofont-10x icofont-carrot"></i>
-                            <form>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Type:</label>
-                                    </div>
-                                    <div class="cell">
-                                        <em>Vegetable</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Price:</label>
-                                    </div>
-                                    <div class="cell">$4.82</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Quantity:</label>
-                                    </div>
-                                    <div class="cell">
-                                        <input type="number" value="0" />
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-light">Add to cart</button>
-                        </div>
-                    </div>
+                    <!-- card - Cherries -->
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <div class="card-image-top text-center pt-3">
+                                <i
+                                    class="icofont-10x icofont-cherry text-danger"
+                                ></i>
+                            </div>
 
-                    <div class="card">
-                        <div class="card-title">Pineapples</div>
-                        <div class="card-body">
-                            <i class="icofont-10x icofont-pineapple"></i>
-                            <form>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Type:</label>
-                                    </div>
-                                    <div class="cell">
-                                        <em>Fruit</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Price:</label>
-                                    </div>
-                                    <div class="cell">$1.62</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Quantity:</label>
-                                    </div>
-                                    <div class="cell">
-                                        <input type="number" value="0" />
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-light">Add to cart</button>
-                        </div>
-                    </div>
+                            <div class="card-body p-5">
+                                <h4 class="card-title mb-4">Cherries</h4>
 
-                    <div class="card">
-                        <div class="card-title">Cherries</div>
-                        <div class="card-body">
-                            <i class="icofont-10x icofont-cherry"></i>
-                            <form>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Type:</label>
+                                <dl class="row mb-4">
+                                    <hr />
+                                    <dt class="col-sm-6">Price:</dt>
+                                    <dd class="col-sm-6">$1.04</dd>
+                                    <hr />
+                                    <dt class="col-sm-6">Type:</dt>
+                                    <dd class="col-sm-6">Fruit</dd>
+                                </dl>
+
+                                <div class="d-flex justify-content-between">
+                                    <div class="input-group me-4">
+                                        <input
+                                            type="number"
+                                            class="form-control form-control-sm"
+                                            value="1"
+                                        />
+                                        <span class="input-group-text">#</span>
                                     </div>
-                                    <div class="cell">
-                                        <em>Fruit</em>
-                                    </div>
+
+                                    <button
+                                        class="btn btn-primary btn-sm d-flex align-items-center px-3"
+                                    >
+                                        Add
+                                        <i
+                                            class="icofont-cart-alt icofont-2x ms-2"
+                                        ></i>
+                                    </button>
                                 </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Price:</label>
-                                    </div>
-                                    <div class="cell">$1.04</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell">
-                                        <label>Quantity:</label>
-                                    </div>
-                                    <div class="cell">
-                                        <input type="number" value="0" />
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-light">Add to cart</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
+        </main>
 
+        <div id="app">
             <aside class="cart-container">
                 <div class="cart">
                     <h1 class="cart-title spread">

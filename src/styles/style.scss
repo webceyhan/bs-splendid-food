@@ -1,0 +1,17 @@
+/* Settings */
+@import "_var.sass";
+
+/* Bootstrap */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* Fonts */
+@import "_modak.scss";
+@import "_icofont.scss";
+
+/* Base */
+@import "_global.sass";
+@import "_utility.sass";
+
+// /* Components */
+@import "_navmenu.sass";
+@import "_splash.sass";

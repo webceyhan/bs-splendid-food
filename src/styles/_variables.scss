@@ -1,16 +1,17 @@
 // Color system
 
 // scss-docs-start gray-color-variables
+$brown: #8a5731; // gray => brown
 $white: #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
+$gray-100: tint-color($brown, 85%) !default;
+$gray-200: tint-color($brown, 60%) !default;
+$gray-300: tint-color($brown, 40%) !default;
+$gray-400: tint-color($brown, 20%) !default;
+$gray-500: $brown !default;
+$gray-600: shade-color($brown, 20%) !default;
+$gray-700: shade-color($brown, 40%) !default;
+$gray-800: shade-color($brown, 60%) !default;
+$gray-900: shade-color($brown, 85%) !default;
 $black: #000;
 // scss-docs-end gray-color-variables
 
@@ -136,8 +137,8 @@ $success: $green;
 $info: $cyan;
 $warning: $yellow;
 $danger: $red;
-$light: $indigo-50;
-$dark: $indigo-900;
+$light: $gray-100;
+$dark: $gray-900;
 // scss-docs-end theme-color-variables
 
 // Body
@@ -146,6 +147,7 @@ $dark: $indigo-900;
 $body-bg: $light;
 $body-color: $dark;
 $body-text-align: null;
+$body-y-padding: 50px;
 
 // scss-docs-start border-radius-variables
 $border-radius: 0.25rem;

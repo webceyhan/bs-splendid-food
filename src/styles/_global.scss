@@ -1,4 +1,5 @@
 body {
     // fixed-top navbar hack
-    padding-top: 50px;
+    padding-top: $body-y-padding;
+    padding-bottom: $body-y-padding;
 }

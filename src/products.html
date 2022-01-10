@@ -18,10 +18,10 @@
     <body>
         <!-- navigation -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
-            <div class="container-fluid p-2-">
+            <div class="container-fluid">
                 <button
-                    class="navbar-toggler"
                     type="button"
+                    class="navbar-toggler"
                     data-bs-toggle="collapse"
                     data-bs-target="#navmenu"
                 >
@@ -32,21 +32,19 @@
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav align-items-md-center">
                         <li class="nav-item">
-                            <a
-                                href="app.html"
-                                class="nav-link d-flex align-items-center"
-                            >
-                                <i
-                                    class="icofont-spoon-and-fork icofont-2x me-2"
-                                >
-                                </i>
-                                Home
+                            <a href="app.html" class="nav-link">
+                                <span class="d-flex align-items-center">
+                                    <i
+                                        class="icofont-spoon-and-fork icofont-2x"
+                                    ></i>
+                                    <span class="ms-2">Home</span>
+                                </span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="products.html" class="nav-link active"
-                                >Products</a
-                            >
+                            <a href="products.html" class="nav-link active">
+                                Products
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a href="past-orders.html" class="nav-link">
@@ -60,12 +58,14 @@
                         <li class="nav-item">
                             <a
                                 href="#"
-                                class="nav-link d-flex align-items-center"
+                                class="nav-link"
                                 data-bs-toggle="offcanvas"
                                 data-bs-target="#cart"
                             >
-                                <i class="icofont-cart-alt icofont-2x me-2"></i>
-                                <span>Cart (0)</span>
+                                <span class="d-flex align-items-center">
+                                    <i class="icofont-cart-alt icofont-2x"></i>
+                                    <span class="ms-2">Cart (0)</span>
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -78,7 +78,9 @@
             <div class="container py-5">
                 <h1 class="mb-3">Products</h1>
 
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div
+                    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4"
+                >
                     <!-- card - Carrots -->
                     <div class="col">
                         <div class="card bg-dark text-white">
@@ -140,7 +142,6 @@
                                     <dd class="col-sm-6">Fruit</dd>
                                 </dl>
 
-
                                 <div class="input-group input-group-sm">
                                     <input
                                         type="number"
@@ -181,7 +182,6 @@
                                     <dd class="col-sm-6">Meat</dd>
                                 </dl>
 
-
                                 <div class="input-group input-group-sm">
                                     <input
                                         type="number"
@@ -221,7 +221,6 @@
                                     <dt class="col-sm-6">Type:</dt>
                                     <dd class="col-sm-6">Fruit</dd>
                                 </dl>
-
 
                                 <div class="input-group input-group-sm">
                                     <input

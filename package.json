@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "concurrently \"npm run sass\" \"npm run serve\"",
-        "serve": "browser-sync start -sw --startPath=/src/app.html --ignore=.git,node_modules",
+        "serve": "browser-sync start -sw --startPath=/public/app.html --ignore=.git,node_modules",
         "sass": "sass -w --style=compressed src/styles/style.scss public/style.min.css"
     },
     "devDependencies": {

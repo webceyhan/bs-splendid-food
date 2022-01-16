@@ -1,13 +1,13 @@
 #splash {
     height: 300px;
-    background-image: url("../../public/splash.jpg");
+    background-image: url("../../public/img/splash.jpg");
     background-position: center center;
     background-size: cover;
 
     .container {
         height: 100%;
         background-position: top center;
-        background-image: url("../../public/grain.png");
+        background-image: url("../../public/img/grain.png");
     }
 
     h1 {

@@ -107,8 +107,8 @@ The workflow will build the project using npm and output the result to the `dist
 ## References
 
 -   [Node.js](https://nodejs.dev/)
+-   [SaSS](https://sass-lang.com/)   
 -   [Bootstrap](https://getbootstrap.com)
--   [SaSS](https://sass-lang.com/)
 -   [GitHub Actions](https://docs.github.com/en/actions)
     -   [GitHub Pages](https://pages.github.com/)
     -   [github-pages-deploy-action](https://github.com/JamesIves/)

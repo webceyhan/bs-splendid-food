@@ -1,8 +1,18 @@
 {
-    "name": "splendid-food",
+    "name": "bs-splendid-food",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "keywords": [],
+    "author": "Evren Ceyhan",
+    "license": "MIT",
+    "homepage": "https://github.com/webceyhan/bs-splendid-food#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/webceyhan/bs-splendid-food.git"
+    },
+    "bugs": {
+        "url": "https://github.com/webceyhan/bs-splendid-food/issues"
+    },
     "scripts": {
         "dev": "concurrently \"npm:dev:sass\" \"npm:dev:serve\"",
         "dev:serve": "browser-sync start -sw --startPath=/src --ignore=.git,node_modules",
@@ -18,8 +28,5 @@
         "browser-sync": "^2.27.7",
         "concurrently": "^7.0.0",
         "sass": "^1.49.7"
-    },
-    "keywords": [],
-    "author": "Evren Ceyhan",
-    "license": "MIT"
+    }
 }

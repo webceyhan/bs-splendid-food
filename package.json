@@ -4,9 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "concurrently \"npm:sass\" \"npm:serve\"",
-        "serve": "browser-sync start -sw --startPath=/src --ignore=.git,node_modules",
-        "sass": "sass -w --style=compressed src/sass/styles.scss src/assets/styles.min.css"
+        "dev": "concurrently \"npm:dev:sass\" \"npm:dev:serve\"",
+        "dev:serve": "browser-sync start -sw --startPath=/src --ignore=.git,node_modules",
+        "dev:sass": "sass -w --style=compressed src/sass/styles.scss src/assets/styles.min.css",
+        "build": "npm run build:clean && npm run build:sass && npm run build:dist",
+        "build:dist": "cp -r src/ dist/ && rm -rf dist/sass",
+        "build:sass": "sass --style=compressed src/sass/styles.scss src/assets/styles.min.css",
+        "build:clean": "rm -rf dist",
+        "preview": "npm run build && browser-sync start -s --startPath=/dist"
     },
     "devDependencies": {
         "bootstrap": "^5.1.3",

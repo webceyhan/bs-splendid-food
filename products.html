@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Splendid Food - Products</title>
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+        <link rel="stylesheet" href="assets/styles.min.css" />
+    </head>
+    <body>
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+            <div class="container-fluid">
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                >
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+
+                <!-- collapsible menu -->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav align-items-md-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="d-flex align-items-center">
+                                    <i
+                                        class="icofont-spoon-and-fork icofont-2x"
+                                    ></i>
+                                    <span class="ms-2">Home</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products.html" class="nav-link active">
+                                Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="past-orders.html" class="nav-link">
+                                Past Orders
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- cart -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a
+                                href="#"
+                                class="nav-link"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#cart"
+                            >
+                                <span class="d-flex align-items-center">
+                                    <i class="icofont-cart-alt icofont-2x"></i>
+                                    <span class="ms-2">Cart (0)</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- products -->
+        <main>
+            <div class="container py-5">
+                <h1 class="mb-3">Products</h1>
+
+                <div
+                    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4"
+                >
+                    <!-- card - Carrots -->
+                    <div class="col">
+                        <div class="card bg-dark text-white rounded-5">
+                            <div class="card-image-top text-center pt-3">
+                                <i
+                                    class="icofont-10x icofont-carrot text-success"
+                                ></i>
+                            </div>
+
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4">Carrots</h4>
+
+                                <dl class="row mb-4">
+                                    <hr />
+                                    <dt class="col-sm-5">Price:</dt>
+                                    <dd class="col-sm-7">$4.82</dd>
+                                    <hr />
+                                    <dt class="col-sm-5">Type:</dt>
+                                    <dd class="col-sm-7">Vegetable</dd>
+                                </dl>
+
+                                <div class="input-group input-group-sm">
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        value="1"
+                                    />
+                                    <button
+                                        class="btn btn-primary d-flex align-items-center justify-content-center flex-fill"
+                                    >
+                                        Add
+                                        <i
+                                            class="icofont-cart-alt icofont-2x ms-2"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card - Pineapples -->
+                    <div class="col">
+                        <div class="card bg-dark text-white rounded-5">
+                            <div class="card-image-top text-center pt-3">
+                                <i
+                                    class="icofont-10x icofont-pineapple text-danger"
+                                ></i>
+                            </div>
+
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4">Pineapples</h4>
+
+                                <dl class="row mb-4">
+                                    <hr />
+                                    <dt class="col-sm-5">Price:</dt>
+                                    <dd class="col-sm-7">$1.62</dd>
+                                    <hr />
+                                    <dt class="col-sm-5">Type:</dt>
+                                    <dd class="col-sm-7">Fruit</dd>
+                                </dl>
+
+                                <div class="input-group input-group-sm">
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        value="1"
+                                    />
+                                    <button
+                                        class="btn btn-primary d-flex align-items-center justify-content-center flex-fill"
+                                    >
+                                        Add
+                                        <i
+                                            class="icofont-cart-alt icofont-2x ms-2"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card - Sausages -->
+                    <div class="col">
+                        <div class="card bg-dark text-white rounded-5">
+                            <div class="card-image-top text-center pt-3">
+                                <i
+                                    class="icofont-10x icofont-sausage text-warning"
+                                ></i>
+                            </div>
+
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4">Sausages</h4>
+
+                                <dl class="row mb-4">
+                                    <hr />
+                                    <dt class="col-sm-5">Price:</dt>
+                                    <dd class="col-sm-7">$3.69</dd>
+                                    <hr />
+                                    <dt class="col-sm-5">Type:</dt>
+                                    <dd class="col-sm-7">Meat</dd>
+                                </dl>
+
+                                <div class="input-group input-group-sm">
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        value="1"
+                                    />
+                                    <button
+                                        class="btn btn-primary d-flex align-items-center justify-content-center flex-fill"
+                                    >
+                                        Add
+                                        <i
+                                            class="icofont-cart-alt icofont-2x ms-2"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card - Cherries -->
+                    <div class="col">
+                        <div class="card bg-dark text-white rounded-5">
+                            <div class="card-image-top text-center pt-3">
+                                <i
+                                    class="icofont-10x icofont-cherry text-danger"
+                                ></i>
+                            </div>
+
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4">Cherries</h4>
+
+                                <dl class="row mb-4">
+                                    <hr />
+                                    <dt class="col-sm-5">Price:</dt>
+                                    <dd class="col-sm-7">$1.04</dd>
+                                    <hr />
+                                    <dt class="col-sm-5">Type:</dt>
+                                    <dd class="col-sm-7">Fruit</dd>
+                                </dl>
+
+                                <div class="input-group input-group-sm">
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        value="1"
+                                    />
+                                    <button
+                                        class="btn btn-primary d-flex align-items-center justify-content-center flex-fill"
+                                    >
+                                        Add
+                                        <i
+                                            class="icofont-cart-alt icofont-2x ms-2"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- cart offcanvas -->
+        <div
+            id="cart"
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+        >
+            <div class="offcanvas-header bg-dark text-white">
+                <h6 class="d-flex align-items-center m-0">
+                    <i class="icofont-cart-alt icofont-2x me-2"></i>
+                    Cart
+                </h6>
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                ></button>
+            </div>
+
+            <div class="offcanvas-body bg-light">
+                <!-- cart empty message -->
+                <p class="lead text-center p-5"><em>No items in cart</em></p>
+
+                <!-- cart table -->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <!-- image -->
+                            </th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Total</th>
+                            <th>
+                                <!-- actions -->
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td>
+                                <i
+                                    class="icofont-carrot icofont-2x text-success"
+                                ></i>
+                            </td>
+                            <td>Carrot</td>
+                            <td>$1.00</td>
+                            <td class="text-center">1</td>
+                            <td>$1.00</td>
+                            <td class="text-end">
+                                <button class="btn-close btn-sm"></button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <i
+                                    class="icofont-pineapple icofont-2x text-danger"
+                                ></i>
+                            </td>
+                            <td>Pineapple</td>
+                            <td>$1.50</td>
+                            <td class="text-center">1</td>
+                            <td>$1.00</td>
+                            <td class="text-end">
+                                <button class="btn-close btn-sm"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div
+                    class="d-flex align-items-center justify-content-between pt-2"
+                >
+                    <!-- cart total -->
+                    <div><strong>Total:</strong> $1.00</div>
+
+                    <!-- checkout button -->
+                    <button class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS Bundle -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

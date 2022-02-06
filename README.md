@@ -1,6 +1,6 @@
 <!-- AUTOMATION BADGES -->
 
-[![Build and Deploy](https://github.com/webceyhan/bs-splendid-food/actions/workflows/github-pages.yaml/badge.svg)](https://github.com/webceyhan/bs-splendid-food/actions/workflows/github-pages.yaml)
+[![Build and Deploy](https://github.com/webceyhan/bs-splendid-food/actions/workflows/github-pages.yml/badge.svg)](https://github.com/webceyhan/bs-splendid-food/actions/workflows/github-pages.yml)
 
 <!-- LOGO (OPTIONAL) -->
 

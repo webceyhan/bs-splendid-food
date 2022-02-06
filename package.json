@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "concurrently \"npm run sass\" \"npm run serve\"",
-        "serve": "browser-sync start -sw --startPath=/docs --ignore=.git,node_modules",
-        "sass": "sass -w --style=compressed src/style.scss docs/style.min.css"
+        "dev": "concurrently \"npm:sass\" \"npm:serve\"",
+        "serve": "browser-sync start -sw --startPath=/src --ignore=.git,node_modules",
+        "sass": "sass -w --style=compressed src/sass/styles.scss src/assets/styles.min.css"
     },
     "devDependencies": {
         "bootstrap": "^5.1.3",
